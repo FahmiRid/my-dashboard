@@ -41,7 +41,7 @@ function landpage() {
             </li>
             <li>
               <Link href="/contact" legacyBehavior>
-                <a>Contact454</a>
+                <a>Contact</a>
               </Link>
             </li>
             <li>
