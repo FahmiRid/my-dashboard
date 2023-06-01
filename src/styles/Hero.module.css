@@ -1,0 +1,85 @@
+/* Hero.module.css */
+
+.hero {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(5.53deg, #2b5876 0%, #4e4376 50.53%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1em;
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.ctaButton {
+    padding: 12px 24px;
+    font-size: 18px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: all .55s ease;
+    transform: translateX(8px);
+
+}
+
+.ctaButtonSecond {
+    margin-left: 2em;
+    padding: 12px 24px;
+    font-size: 18px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: all .55s ease;
+    transform: translateX(8px);
+
+}
+
+.ctaButton:hover {
+    background-color: rgba(182, 181, 181, 0.303);
+}
+
+.ctaButtonSecond:hover {
+    background-color: rgba(182, 181, 181, 0.303);
+}
+
+/* Hero.module.css */
+
+.img {
+    width: 550px;
+    height: auto;
+    margin-left: 11rem;
+    animation: bounce 0.8s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+  
