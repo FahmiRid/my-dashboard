@@ -2,6 +2,7 @@
 
 .header {
   font-family: 'Rajdhani', sans-serif;
+  font-size: 24px;
   position: fixed;
   right: 0;
   top: 0;
@@ -44,5 +45,19 @@
 }
 
 .nav a:hover {
-  background-color: #555;
+  background-color: #d6d4d421;
+}
+
+.btn{
+  font-family: 'Rajdhani', sans-serif;
+  padding: 12px 24px;
+  font-size: 15px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 2em;
+  cursor: pointer;
+  transition: all .55s ease;
+  transform: translateX(8px);
+
 }

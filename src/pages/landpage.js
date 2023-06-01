@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "@/styles/Main.module.css";
 import Link from 'next/link';
 import Hero from './hero.js';
 import Head from 'next/head';
+import LoginModal from "./LoginModal.js";
 
 function landpage() {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <>
     <Head>
@@ -14,7 +25,7 @@ function landpage() {
         </Head>
     <div>
       <header className={styles.header}>
-        <h1 className={styles.logo}>Dashboard </h1>
+        <h1 className={styles.logo}>Pixel </h1>
         <nav className={styles.nav}>
           {/* Add your navigation links here */}
           <ul>
@@ -30,15 +41,21 @@ function landpage() {
             </li>
             <li>
               <Link href="/contact" legacyBehavior>
-                <a>Contact</a>
+                <a>Contact454</a>
               </Link>
+            </li>
+            <li>
             </li>
           </ul>
         </nav>
+        <button className={styles.btn} onClick={openModal} legacyBehavior>
+                <a>Login</a>
+              </button>
       </header>
       <section className={styles.hero}>
             <Hero />
       </section>
+      {showModal && <LoginModal onClose={closeModal} />}
     </div>
     </>
   );

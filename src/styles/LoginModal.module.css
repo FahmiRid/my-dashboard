@@ -1,0 +1,99 @@
+/* LoginModal.module.css */
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #000000;
+  background: rgba(46, 46, 71, 0.863);
+  border: 2px solid white;
+  padding: 40px;
+  border-radius: 1em;
+  max-width: 800px; /* Adjust the max-width to your desired width */
+  width: 90%; /* Add this line to make the modal responsive */
+  margin: 0 auto; /* Add this line to center the modal horizontally */
+  text-align: center;
+}
+
+.title {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.label {
+  font-family: 'Julius Sans One', sans-serif;
+  display: contents;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 13px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.passwordInputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.eyeIcon:hover {
+  color: #555;
+}
+
+
+.submitButton {
+  width: 20%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #555;
+}
+
+.closeButton {
+  width: 20%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background-color: #aaa;
+}

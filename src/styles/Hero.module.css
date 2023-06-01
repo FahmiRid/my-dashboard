@@ -20,11 +20,15 @@
     font-family: 'Press Start 2P', cursive;
     line-height: 1em;
     font-size: 45px;
-    color: #fff;
     margin-bottom: 20px;
-}
+    background: linear-gradient(to top, #37749c, #ae97ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
 
 .subtitle {
+    font-family: 'Julius Sans One', sans-serif;
     font-size: 24px;
     color: #fff;
     margin-bottom: 40px;
